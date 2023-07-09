@@ -1,0 +1,43 @@
+// navbar scss and their all elements
+nav{
+    height: 5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.299);
+    background-color: white;
+
+    > div{
+        display: flex;
+        align-items: center;
+
+        > svg{
+            color: red;
+            font-size: 3rem;
+        }
+
+        > a{
+            margin: 0 2rem;
+            color: black;
+            transition: color 0.3ms;
+
+            > svg{
+                color: red;
+                transition: inherit;
+                font-size: 1.5rem;
+
+            }
+        }
+    }
+}
+
+// responsive nature
+@media screen and (max-width: 600px) {
+    nav{
+        padding: 1rem;
+        > div > a{
+            margin: 0 0.5rem;
+        }
+    }
+}
