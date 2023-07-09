@@ -1,16 +1,35 @@
 import React from 'react'
+import { motion } from "framer-motion";
+import Menu from "./Menu"
 
 const Home = () => {
-  return <section class="home">
-    <div>
-        <h1>BurgerX</h1>
-        <p>Give Yourself a tasty Burger.</p>
-    </div>
+    const options = {
+        initial: {
+            x: "-100%",
+            opacity: 0
+        },
+        whileInView: {
+            x: 0,
+            opacity: 1
+        }
+    }
 
-    <a href="#menu">
-        Explore Menu
-    </a>
-  </section>
+    return (
+        <>
+        <section class="home">
+            <div>
+                <motion.h1 {...options}>BurgerX</motion.h1>
+                <motion.p {...options} transition={{ delay: 0.2 }}>Give Yourself A Tasty Burger Meal Today</motion.p>
+            </div>
+
+            <motion.a href="#menu"
+                initial={{ y: "-100%", opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ delay: 0.4 }}>
+                Explore Menu
+            </motion.a>
+        </section>
+        <Menu/>
+        </>
+    );
 }
 
 export default Home

@@ -1,21 +1,25 @@
+// home css
 .home{
     height: 100vh;
+    overflow-x: hidden;
     > div{
-        padding-left: 8 rem;
+        padding-left: 8rem;
         padding-top: 15rem;
         > h1{
             font-size: 4rem;
             text-transform: uppercase;
         }
-
+        
         > p{
+            text-transform: uppercase;
             font-size: 1.2rem;
         }
     }
-
+    
     > a{
+        text-transform: uppercase;
         display: block;
-        margin: 2rem;
+        margin: 2rem 8rem;
         background-color: red;
         width: 10rem;
         color: white;
@@ -26,8 +30,35 @@
         padding: 1rem;
         cursor: pointer;
         &:hover{
-            background-color: red;
+            color: red;
+            background-color: white;
         }
+    }
 
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/bg3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        z-index: -1;
+    }
+}
+
+// responsive nature
+@media screen and (max-width: 600px) {
+    .home{
+        > div{
+            text-align: center;
+            padding-top: 5rem;
+            padding-left: 0rem;
+        }
+        > a{
+            margin: 2rem auto;
+        }
     }
 }
