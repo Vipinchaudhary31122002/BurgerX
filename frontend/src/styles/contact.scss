@@ -43,7 +43,14 @@
       font-size: 2rem;
     }
   }
-  // > FormBorder {
-    
-  // }
+}
+
+@media screen and (max-width: 600px) {
+  .contact{
+    height: 83vh;
+    > form{
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
