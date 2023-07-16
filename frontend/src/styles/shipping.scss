@@ -1,0 +1,82 @@
+.shipping {
+  background-image: url(../assets/bg7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  > main {
+    height: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 0.5rem;
+    > h1 {
+      text-transform: uppercase;
+      text-align: center;
+      font: 100 3rem;
+    }
+    > form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > div {
+        width: 70%;
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+        > label {
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+        > input,
+        select {
+          width: 450px;
+          padding: 0.5rem 1rem;
+          outline: none;
+          border: 1px solid rgba(0, 0, 0, 0.172);
+          border-radius: 5px;
+          margin: 1rem;
+          font-size: 1rem;
+        }
+      }
+      > button {
+        background-color: red;
+        color: white;
+        outline: none;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        margin: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .shipping {
+    height: 85vh;
+    > main {
+      width: 100%;
+      > form {
+        width: 100%;
+        > div {
+          width: 100%;
+          > input,
+          > select,
+          > label {
+            width: 100%;
+          }
+        }
+        > button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

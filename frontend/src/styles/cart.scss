@@ -10,21 +10,21 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 0.01rem;
     justify-content: center;
     align-items: stretch;
-    > article{
-      padding: 1rem;
+    > article {
+      padding: 2rem;
       margin: 1rem;
       border-radius: 10px;
       color: black;
       background-color: white;
-      > div{
+      > div {
         display: flex;
         justify-content: space-between;
         margin: 1rem 0;
       }
-      > a{
+      > a {
         float: right;
         background-color: red;
         color: white;
@@ -32,7 +32,6 @@
         border-radius: 5px;
         text-align: center;
         cursor: pointer;
-
       }
     }
   }
@@ -85,10 +84,9 @@
 }
 
 @media screen and (max-width=600px) {
-  .cart > main > article > a{
+  .cart > main > article > a {
     float: none;
     display: block;
     width: 100%;
-    
   }
 }
