@@ -6,6 +6,8 @@ import Footer from "./components/layout/Footer";
 import Cart from "./components/Cart/Cart";
 import Shipping from "./components/Cart/Shipping";
 import ConfirmOrder from "./components/Cart/ConfirmOrder";
+import PaymentSuccess from "./components/Cart/PaymentSuccess";
+import LogIn from "./components/login/Login";
 
 // added the scss file
 import "./styles/app.scss";
@@ -17,6 +19,8 @@ import "./styles/contact.scss";
 import "./styles/cart.scss";
 import "./styles/shipping.scss";
 import "./styles/confirmorder.scss";
+import "./styles/paymentsuccess.scss";
+import "./styles/login.scss";
 
 function App() {
   return (
@@ -28,6 +32,8 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/shipping" element={<Shipping />} />
         <Route path="/confirmorder" element={<ConfirmOrder />} />
+        <Route path="/paymentsuccess" element={<PaymentSuccess />} />
+        <Route path="/login" element={<LogIn />} />
       </Routes>
       <Footer />
     </Router>
