@@ -8,6 +8,7 @@ import Shipping from "./components/Cart/Shipping";
 import ConfirmOrder from "./components/Cart/ConfirmOrder";
 import PaymentSuccess from "./components/Cart/PaymentSuccess";
 import LogIn from "./components/login/Login";
+import Profile from "./components/profile/Profile";
 
 // added the scss file
 import "./styles/app.scss";
@@ -21,11 +22,12 @@ import "./styles/shipping.scss";
 import "./styles/confirmorder.scss";
 import "./styles/paymentsuccess.scss";
 import "./styles/login.scss";
+import "./styles/profile.scss"
 
 function App() {
   return (
     <Router>
-      <Header />
+      <Header isAuthenticated={true} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
@@ -34,6 +36,7 @@ function App() {
         <Route path="/confirmorder" element={<ConfirmOrder />} />
         <Route path="/paymentsuccess" element={<PaymentSuccess />} />
         <Route path="/login" element={<LogIn />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
       <Footer />
     </Router>
