@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion"
 
 const contact = () => {
-  return <section class="contact">
+  return <section className="contact">
     <motion.form
       initial={{
         x: "-100vw",

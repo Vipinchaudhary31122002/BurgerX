@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import Menu from "./Menu"
+import Footer from "../layout/Footer";
 
 const Home = () => {
     const options = {
@@ -28,6 +29,7 @@ const Home = () => {
                 </motion.a>
             </section>
             <Menu />
+            <Footer/>
         </>
     );
 }
