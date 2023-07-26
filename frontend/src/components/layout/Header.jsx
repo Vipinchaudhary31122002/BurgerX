@@ -12,26 +12,24 @@ import me from "../../assets/founder.jpg";
 function ModalComponent(props) {
   if (props.value === "login") {
     return (
-        <>
+      <>
         <Modal
-        {...props}
-        size="sm"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Body>
-          <main>
-            <motion.button
-            initial={{y:"-100vh"}}
-            animate={{y:0}}
-            >
-                Login with Google<FcGoogle/>
-            </motion.button>
-          </main>
-        </Modal.Body>
-      </Modal>
+          {...props}
+          size="sm"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+        >
+          <Modal.Body>
+            <main>
+              <motion.button initial={{ y: "-100vh" }} animate={{ y: 0 }}>
+                Login with Google
+                <FcGoogle />
+              </motion.button>
+            </main>
+          </Modal.Body>
+        </Modal>
       </>
-        )
+    );
   } else {
     const options = {
       initial: {
@@ -64,7 +62,7 @@ function ModalComponent(props) {
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              <Link to="admin/myorders">Orders</Link>
+              <Link to="myorders">Orders</Link>
             </motion.div>
             <motion.button
               initial={{ x: "-100vw", opacity: 0 }}

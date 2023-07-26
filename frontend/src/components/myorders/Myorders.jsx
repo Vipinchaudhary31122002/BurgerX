@@ -27,10 +27,7 @@ const Myorders = () => {
                 <td>₹ 2000</td>
                 <td>Cash on delivery</td>
                 <td>
-                  <Link to={`/orders/${"asljgsjj"}`}>
-                    {" "}
-                    <AiOutlineEye />
-                  </Link>
+                  <Link to={`/order/${"as"}`}><AiOutlineEye /></Link>
                 </td>
               </tr>
             ))}
