@@ -9,6 +9,9 @@ import PaymentSuccess from "./components/Cart/PaymentSuccess";
 import About from "./components/about/About";
 import Myorders from "./components/myorders/Myorders";
 import OrderDetails from "./components/myorders/OrderDetails"
+import Dashboard from "./components/admin/Dashboard";
+// import Users from "./components/admin/Users";
+// import Orders from "./components/admin/Orders";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // added the scss file
@@ -25,6 +28,7 @@ import "./styles/paymentsuccess.scss";
 import "./styles/about.scss"
 import "./styles/table.scss"
 import "./styles/orderdetails.scss"
+import "./styles/dashboard.scss"
 
 function App() {
   return (
@@ -40,6 +44,9 @@ function App() {
         <Route path="/paymentsuccess" element={<PaymentSuccess />} />
         <Route path="/myorders" element={<Myorders />} />
         <Route path="/order/:id" element={<OrderDetails />} />
+        <Route path="/admin/dashboard" element={<Dashboard />} />
+        {/* <Route path="/admin/users" element={<Users />} /> */}
+        {/* <Route path="/admin/orders" element={<Orders />} /> */}
       </Routes>
     </Router>
   );

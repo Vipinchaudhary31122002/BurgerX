@@ -55,7 +55,7 @@ function ModalComponent(props) {
               Abhimanyu
             </motion.h5>
             <motion.div {...options} transition={{ delay: 0.5 }}>
-              <Link to="admin/dashboard">DashBoard</Link>
+              <Link to="/admin/dashboard">DashBoard</Link>
             </motion.div>
             <motion.div
               initial={{ x: "-100vw", opacity: 0 }}

@@ -1,41 +1,105 @@
-main{
+.about {
   width: 100%;
-  height: 100%;
-  // margin: auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  > img {
-    height: 15rem;
-    width: 15rem;
-    border-radius: 10%;
-    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.146);
-    margin: 1rem;
-  }
-  > h5 {
-    font-size: 2rem;
-    padding-bottom: 1rem;
-  }
-  > div {
-    margin: 1rem;
-    > a {
-      background-color: red;
+  background-color: red;
+
+  > main {
+    background-color: white;
+    max-width: 900px;
+    height: 100%;
+    margin: auto;
+
+    > article {
+      margin: 1rem 0;
+      > h4 {
+        font: 100 4rem "Roboto";
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      > p {
+        letter-spacing: 3px;
+        word-spacing: 3px;
+        padding: 1rem;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+      }
+
+      > a {
+        background-color: black;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        color: white;
+        font-size: 1.5rem;
+        transition: all 0.3s;
+        margin: auto;
+        &:hover {
+          color: red;
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    > div {
+      background-color: black;
+      padding: 1rem;
       color: white;
-      padding: 0.7rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 5px;
+      > h2 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      > article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        > div {
+          margin: 2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          > img {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+          }
+          > h3 {
+            margin: 1rem;
+          }
+        }
+        > p {
+          margin: 0 1rem;
+          width: 50%;
+          letter-spacing: 2px;
+          line-height: 150%;
+        }
+      }
     }
   }
-  > button {
-    border: none;
-    outline: none;
-    padding: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 1rem;
-    background-color: red;
-    color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .about > main {
+    > h1 {
+      font: 100 3rem "Roboto";
+      text-align: center;
+    }
+
+    > article > p {
+      width: 100%;
+    }
+
+    > div > article {
+      flex-direction: column;
+
+      > p {
+        text-align: center;
+      }
+    }
   }
 }
